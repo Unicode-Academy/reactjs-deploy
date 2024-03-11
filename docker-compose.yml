@@ -2,10 +2,7 @@ version: '3'
 services:
   reactjs: 
     build: ./
-    container_name: reactjs
-    ports:
-      - 3001:3001
   nginx: 
     build: ./nginx
     ports:
-      - 81:81
+      - 8001:8001
