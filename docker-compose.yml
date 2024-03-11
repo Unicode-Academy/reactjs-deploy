@@ -1,7 +1,10 @@
 version: '3'
 services:
   reactjs: 
-    build: ./
+    build: .
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
   nginx: 
     build: ./nginx
     ports:
