@@ -27,4 +27,4 @@ EXPOSE 3001
 USER node
 
 # Launch app with PM2
-CMD [ "pm2-runtime", "start", "npm", "--", "preview" ]
+CMD [ "pm2-runtime", "start", "npm", "--", "run", "--", "preview" ]
